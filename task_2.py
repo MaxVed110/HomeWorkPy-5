@@ -121,3 +121,4 @@ while(count > 0):
     if check:
         break
     count -= 1
+print("Ходов больше не осталось!")
