@@ -1,5 +1,6 @@
 # "Крестики-нолики"
 
+
 import numbers
 from random import randint
 from tabnanny import check
@@ -98,7 +99,7 @@ def winPc(text, symbol='x'):
    check = winUser(text, symbol)
    return check
 
-
+#пока времени не очень много, поэтому решение не очень и без какого-либо интерфейса
 
 count = 9
 while(count > 0):
