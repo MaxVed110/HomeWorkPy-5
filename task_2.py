@@ -20,7 +20,6 @@ def playingField(field: list):
             string += field[i][j]
         print(string)
 
-
 def playersMove(cellNumber, symbol='*'):
     bool = False
     if cellNumber == 1:
@@ -61,7 +60,6 @@ def playersMove(cellNumber, symbol='*'):
             bool = True
     return bool
 
-
 def computerMove():
     check = False
     while(check == False):
@@ -99,9 +97,6 @@ def winUser(text, symbol='*'):
 def winPc(text, symbol='x'):
    check = winUser(text, symbol)
    return check
-
-
-
 
 
 
