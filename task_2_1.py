@@ -25,10 +25,6 @@ def fieldCls(fieldUser: list):
             if fieldUser[i][j] == '*' or  fieldUser[i][j]== 'x':
                 fieldUser[i][j] = ' '
 
-
-        
-
-
 def playersMove(cellNumber, symbol='*'):
     bool = False
     if cellNumber == 1:
@@ -69,14 +65,11 @@ def playersMove(cellNumber, symbol='*'):
             bool = True
     return bool
 
-
-
 def computerMove():
     check = False
     while(check == False):
         cell = randint(0, 8)
         check = playersMove(cell, symbol='x')
-
 
 def winUser(text, symbol='*'):
     check = False
@@ -106,11 +99,9 @@ def winUser(text, symbol='*'):
         check = True
     return check
 
-
 def winPc(text, symbol='x'):
     check = winUser(text, symbol)
     return check
-
 
 def game(fieldUser):
     print('Готов начать игру?')
@@ -141,7 +132,6 @@ def game(fieldUser):
             print("Ходов больше не осталось!\nНачать заново?\n/break\n/exit")
             strUser += input()
     return strUser
-
 
 def gg(fieldUser):
     fieldCls(fieldUser) 
