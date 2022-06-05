@@ -68,7 +68,7 @@ def playersMove(cellNumber, symbol='*'):
 def computerMove():
     check = False
     while(check == False):
-        cell = randint(0, 8)
+        cell = randint(1, 9)
         check = playersMove(cell, symbol='x')
 
 def winUser(text, symbol='*'):
